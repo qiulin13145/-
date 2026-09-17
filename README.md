@@ -1,14 +1,22 @@
 # Qiulin Shang — Personal Homepage
 
-A personal research homepage for **Qiulin Shang**, designed as a lightweight static site with plain HTML, CSS, and JavaScript.
+Personal academic homepage for **Qiulin Shang**, hosted with GitHub Pages at `https://qiulin13145.github.io/`.
 
-The visual direction is a clean white academic portfolio with a stronger personal brand: navy serif typography, blue/violet accents, handwritten details, subtle mountain imagery, research cards, and lightweight motion.
+The site is intentionally lightweight: plain HTML, CSS, and JavaScript with no build step.
+
+## Current content
+
+- Personal introduction and contact information
+- Research interests: Learning to Optimize, LLM Efficient Pretraining, and AI4AI
+- Selected paper and project links
+- Education timeline at Peking University
+- Personal portrait and branded visual direction
+
+## Interaction design
+
+The homepage uses subtle, dependency-free motion including scroll reveals, parallax background elements, card tilt and spotlight effects, magnetic buttons, animated timeline markers, and a scroll progress indicator. `prefers-reduced-motion` is respected.
 
 ## Local preview
-
-Open `index.html` directly in a browser, or serve the directory with any static HTTP server.
-
-For example:
 
 ```bash
 python -m http.server 8000
@@ -16,25 +24,16 @@ python -m http.server 8000
 
 Then open `http://localhost:8000`.
 
-## Deploy with GitHub Pages
+## GitHub Pages
 
-For the clean account URL `https://qiulin13145.github.io/`, the repository should be named:
+This repository is already named `qiulin13145.github.io`. To publish from the repository root, use:
 
-```text
-qiulin13145.github.io
-```
-
-Then go to **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, and select **main / (root)**.
-
-This repository is currently named `-`, so it can only be published as a project site until it is renamed or the files are moved into a `qiulin13145.github.io` repository.
+**Settings → Pages → Deploy from a branch → main / (root)**
 
 ## Structure
 
-- `index.html` — page content and semantic structure
-- `styles.css` — responsive personal-brand visual system
-- `script.js` — mobile navigation, reveal motion, active navigation, and subtle hero interaction
-- `assets/hero-art.svg` — original lightweight mountain artwork used in the hero and closing section
-
-## Content notes
-
-The site deliberately labels unfinished work as ongoing research rather than presenting it as an accepted publication. Google Scholar and CV links can be added once their final public URLs/files are available.
+- `index.html` — content and semantic structure
+- `styles.css` — responsive visual system and motion
+- `script.js` — navigation, reveal, tilt, parallax, and magnetic interactions
+- `assets/qiulin-shang.jpg` — portrait used in the hero
+- `assets/hero-art.svg` — lightweight decorative mountain artwork retained for future use
