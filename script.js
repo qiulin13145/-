@@ -1,5 +1,18 @@
 document.documentElement.classList.add('js');
 
+// Small layout/asset hotfixes loaded after the main stylesheet.
+const hotfixStyles = document.createElement('link');
+hotfixStyles.rel = 'stylesheet';
+hotfixStyles.href = '/hotfix.css?v=20260917-1905';
+document.head.appendChild(hotfixStyles);
+
+const heroPhoto = document.querySelector('.photo-card img');
+if (heroPhoto) {
+  heroPhoto.src = '/assets/qiulin-shang.jpg?v=20260917-1905';
+  heroPhoto.loading = 'eager';
+  heroPhoto.fetchPriority = 'high';
+}
+
 const body = document.body;
 const header = document.querySelector('.site-header');
 const progress = document.getElementById('scroll-progress');
