@@ -3,14 +3,38 @@ document.documentElement.classList.add('js');
 // Small layout/asset hotfixes loaded after the main stylesheet.
 const hotfixStyles = document.createElement('link');
 hotfixStyles.rel = 'stylesheet';
-hotfixStyles.href = '/hotfix.css?v=20260917-1905';
+hotfixStyles.href = '/hotfix.css?v=20260918-0115';
 document.head.appendChild(hotfixStyles);
 
 const heroPhoto = document.querySelector('.photo-card img');
 if (heroPhoto) {
-  heroPhoto.src = '/assets/qiulin-shang.jpg?v=20260917-1905';
   heroPhoto.loading = 'eager';
   heroPhoto.fetchPriority = 'high';
+
+  const loadHighQualityPortrait = async () => {
+    const urls = Array.from(
+      { length: 7 },
+      (_, i) => `/assets/portrait-b64/part-${String(i + 1).padStart(2, '0')}.txt?v=20260918-hq`
+    );
+
+    try {
+      const chunks = await Promise.all(
+        urls.map(async (url) => {
+          const response = await fetch(url, { cache: 'force-cache' });
+          if (!response.ok) throw new Error(`Portrait chunk failed: ${url}`);
+          return (await response.text()).trim();
+        })
+      );
+      heroPhoto.src = `data:image/webp;base64,${chunks.join('')}`;
+      heroPhoto.classList.add('hq-loaded');
+    } catch (error) {
+      console.error('Unable to load high-quality portrait.', error);
+      heroPhoto.src = '/assets/qiulin-shang.jpg?v=20260918-fallback';
+      heroPhoto.classList.add('hq-loaded');
+    }
+  };
+
+  loadHighQualityPortrait();
 }
 
 const body = document.body;
