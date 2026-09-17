@@ -1,0 +1,13 @@
+.hero-copy h1 {
+  white-space: nowrap;
+  max-width: none;
+  font-size: clamp(4rem, 5.2vw, 5.5rem);
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    white-space: nowrap;
+    font-size: clamp(2.45rem, 10.7vw, 3.6rem);
+    letter-spacing: -0.058em;
+  }
+}
