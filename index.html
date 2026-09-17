@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Qiulin Shang — Ph.D. student in Data Science at Peking University. Research on automated algorithm design, optimization, and efficient training for AI systems." />
+  <meta name="theme-color" content="#f7f7f4" />
+  <meta property="og:title" content="Qiulin Shang | 商秋林" />
+  <meta property="og:description" content="Ph.D. student at Peking University working on automated algorithm design, optimization, and efficient AI training." />
+  <meta property="og:type" content="website" />
+  <title>Qiulin Shang | 商秋林</title>
+  <link rel="preconnect" href="https://avatars.githubusercontent.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Qiulin Shang home">QS</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Ph.D. Student · Data Science · Peking University</p>
+          <h1>Qiulin Shang <span class="cn-name">商秋林</span></h1>
+          <p class="hero-lead">
+            I study how AI systems can <strong>design better algorithms</strong>—with a focus on optimization,
+            efficient training, and reliable evaluation for large language models.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#research">Research</a>
+            <a class="button secondary" href="https://github.com/qiulin13145" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+          <ul class="quick-facts" aria-label="Quick facts">
+            <li>Peking University</li>
+            <li>Data Science</li>
+            <li>AI for Algorithm Design</li>
+          </ul>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile">
+          <img
+            class="avatar"
+            src="https://avatars.githubusercontent.com/u/144438757?v=4"
+            alt="Qiulin Shang"
+            width="240"
+            height="240"
+          />
+          <div class="profile-card-body">
+            <p class="profile-name">Qiulin Shang</p>
+            <p class="profile-role">Ph.D. Student</p>
+            <p class="profile-affiliation">Academy for Advanced Interdisciplinary Studies<br />Peking University</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container narrow">
+        <p class="section-kicker">About</p>
+        <h2>Building systematic ways to discover better training algorithms.</h2>
+        <p class="body-large">
+          I am a Ph.D. student in Data Science at Peking University's Academy for Advanced Interdisciplinary Studies.
+          My research centers on automated algorithm design for AI, with particular interest in optimization,
+          parameter-efficient training, model efficiency, and the evaluation methodology needed to tell whether an
+          algorithmic improvement is real and transferable.
+        </p>
+        <p>
+          A recurring theme in my work is to turn what would traditionally be a hand-designed heuristic into a
+          structured and testable search problem: define the state, expose meaningful algorithmic actions, control
+          experimental cost, and evaluate whether a discovered method generalizes across scales and settings.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Research</p>
+            <h2>Current interests</h2>
+          </div>
+          <p class="section-note">Algorithms, training dynamics, and evaluation.</p>
+        </div>
+
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-index">01</span>
+            <h3>Automated Algorithm Design</h3>
+            <p>
+              Using language models, search, and evolutionary procedures to discover optimization and training
+              algorithms that go beyond manually enumerated recipes.
+            </p>
+          </article>
+          <article class="research-card">
+            <span class="card-index">02</span>
+            <h3>Optimization & Efficient Training</h3>
+            <p>
+              Studying optimizer behavior, training dynamics, low-rank and parameter-efficient methods, and scalable
+              techniques for improving the cost-quality tradeoff of model training.
+            </p>
+          </article>
+          <article class="research-card">
+            <span class="card-index">03</span>
+            <h3>Reliable Algorithm Evaluation</h3>
+            <p>
+              Designing low-cost evaluation protocols that distinguish genuine algorithmic gains from configuration,
+              scale, seed, or benchmark artifacts.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">Projects</p>
+            <h2>Selected public work</h2>
+          </div>
+          <a class="text-link" href="https://github.com/qiulin13145" target="_blank" rel="noreferrer">All GitHub repositories ↗</a>
+        </div>
+
+        <div class="project-list">
+          <article class="project-row">
+            <div class="project-meta">
+              <span class="project-year">Research code</span>
+              <span class="project-status">Public</span>
+            </div>
+            <div class="project-main">
+              <h3>Parameter-Efficient Pretraining & Rank Allocation</h3>
+              <p>
+                Experiments with full-rank, low-rank, sparse + low-rank, Fourier, LoRA, ReLoRA, and GaLore-style
+                pretraining, with a broader interest in how training capacity should be allocated efficiently.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/qiulin13145/Rank_Allocation" target="_blank" rel="noreferrer">Repository ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-row muted-project">
+            <div class="project-meta">
+              <span class="project-year">Ongoing</span>
+              <span class="project-status">Research</span>
+            </div>
+            <div class="project-main">
+              <h3>AI for Algorithm Discovery</h3>
+              <p>
+                Ongoing work on turning optimizer and training-algorithm research into searchable, evidence-driven
+                design spaces. Public code and papers will be linked here as they become available.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-tinted" id="education">
+      <div class="container">
+        <p class="section-kicker">Education</p>
+        <h2>Academic background</h2>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">2025 — Present</div>
+            <div>
+              <h3>Peking University</h3>
+              <p class="timeline-title">Ph.D. in Data Science</p>
+              <p>Academy for Advanced Interdisciplinary Studies</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-kicker">Contact</p>
+          <h2>Research conversations are welcome.</h2>
+        </div>
+        <div class="contact-copy">
+          <p>
+            I am especially interested in discussions around automated algorithm design, optimization, efficient model
+            training, and rigorous evaluation methodology.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:qiulin13145@gmail.com">Email</a>
+            <a class="button secondary" href="https://github.com/qiulin13145" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Qiulin Shang.</p>
+      <p>Built as a lightweight static site on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
