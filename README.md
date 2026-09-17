@@ -1,23 +1,40 @@
 # Qiulin Shang — Personal Homepage
 
-A lightweight static academic homepage built with plain HTML, CSS, and JavaScript.
+A personal research homepage for **Qiulin Shang**, designed as a lightweight static site with plain HTML, CSS, and JavaScript.
+
+The visual direction is a clean white academic portfolio with a stronger personal brand: navy serif typography, blue/violet accents, handwritten details, subtle mountain imagery, research cards, and lightweight motion.
 
 ## Local preview
 
 Open `index.html` directly in a browser, or serve the directory with any static HTTP server.
 
+For example:
+
+```bash
+python -m http.server 8000
+```
+
+Then open `http://localhost:8000`.
+
 ## Deploy with GitHub Pages
 
-1. Open this repository on GitHub.
-2. Go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select branch **main** and folder **/(root)**.
-5. Save the setting.
+For the clean account URL `https://qiulin13145.github.io/`, the repository should be named:
 
-Because this repository is currently named `-`, GitHub Pages will publish it as a project site rather than the account root site. For the clean URL `https://qiulin13145.github.io/`, rename or create a repository named `qiulin13145.github.io` and place the same files in its `main` branch.
+```text
+qiulin13145.github.io
+```
+
+Then go to **Settings → Pages → Build and deployment**, choose **Deploy from a branch**, and select **main / (root)**.
+
+This repository is currently named `-`, so it can only be published as a project site until it is renamed or the files are moved into a `qiulin13145.github.io` repository.
 
 ## Structure
 
-- `index.html` — page content
-- `styles.css` — responsive layout and light/dark themes
-- `script.js` — theme preference and footer year
+- `index.html` — page content and semantic structure
+- `styles.css` — responsive personal-brand visual system
+- `script.js` — mobile navigation, reveal motion, active navigation, and subtle hero interaction
+- `assets/hero-art.svg` — original lightweight mountain artwork used in the hero and closing section
+
+## Content notes
+
+The site deliberately labels unfinished work as ongoing research rather than presenting it as an accepted publication. Google Scholar and CV links can be added once their final public URLs/files are available.
