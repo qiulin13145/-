@@ -858,3 +858,23 @@ body.ready .hero-copy > :nth-child(6) { animation-delay: 0.48s; }
   .reveal { opacity: 1; transform: none; filter: none; }
   .js .hero-copy > * { opacity: 1; transform: none; }
 }
+
+
+/* Subtle authorship note for publications */
+.cofirst-mark {
+  margin-left: 1px;
+  color: #7f8aa6;
+  font-size: 0.66em;
+  font-weight: 600;
+  vertical-align: super;
+}
+
+.cofirst-note {
+  display: block;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  color: #929bb0;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
