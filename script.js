@@ -6,14 +6,6 @@ hotfixStyles.rel = 'stylesheet';
 hotfixStyles.href = '/hotfix.css?v=20260918-0115';
 document.head.appendChild(hotfixStyles);
 
-const heroPhoto = document.querySelector('.photo-card img');
-if (heroPhoto) {
-  heroPhoto.src = '/assets/qiulin-shang.png?v=20260919-portrait';
-  heroPhoto.loading = 'eager';
-  heroPhoto.fetchPriority = 'high';
-  heroPhoto.classList.add('hq-loaded');
-}
-
 const body = document.body;
 const header = document.querySelector('.site-header');
 const progress = document.getElementById('scroll-progress');
