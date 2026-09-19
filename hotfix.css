@@ -1,0 +1,27 @@
+.hero-copy h1 {
+  white-space: nowrap;
+  max-width: none;
+  font-size: clamp(3.9rem, 5vw, 5.05rem);
+  letter-spacing: -0.06em;
+}
+
+.hero-copy h1 .wave {
+  font-size: 0.32em;
+}
+
+.photo-card img {
+  opacity: 0;
+}
+
+.photo-card img.hq-loaded {
+  opacity: 1;
+  transition: opacity 0.22s ease, transform 0.7s cubic-bezier(.2,.75,.25,1);
+}
+
+@media (max-width: 720px) {
+  .hero-copy h1 {
+    white-space: nowrap;
+    font-size: clamp(2.45rem, 10.7vw, 3.6rem);
+    letter-spacing: -0.058em;
+  }
+}
